@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int factors=0, num;
+    cout<<"enter the number:";
+    cin>>num;
+    for(int i=1;i<num;i++){
+        if(num%i==0){
+            factors +=i;
+        }
+    }
+    if(num==factors){
+        cout<<"it is a perfect number :\n";
+    }else{
+        cout<<"it is a not perfect number :\n";
+    }
+    
+
+    return 0;
+}

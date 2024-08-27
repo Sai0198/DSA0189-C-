@@ -1,0 +1,19 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+   cout<<"please enter the string name:";
+   string name;
+   cin>>name;
+  string uppercase=name;
+   string lowercase=name;
+   transform(uppercase.begin(),uppercase.end(),uppercase.begin(),::toupper);
+      transform(lowercase.begin(),lowercase.end(),lowercase.begin(),::tolower);
+
+    cout<<"uppercase:"<<uppercase<<"\n";
+    cout<<"lowercase:"<<lowercase<<"\n";
+  
+   
+
+    return 0;
+}
